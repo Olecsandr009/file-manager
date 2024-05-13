@@ -1,2 +1,3 @@
-# file-manager
-Creating a web application for working with files in a browser
+# Файловий менеджер
+
+[Технічне завдання на розробку](./docs/technical_requirements.md)
