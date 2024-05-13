@@ -43,10 +43,16 @@
 * Бекенд:
     - Express
     - БД PostgreSQL
+    - TypeORM
 
 * Фронтенд:
     - React
+    - React Hook Form
+    - Redux
+    - RTK Query
+    - axios
     - TypeScript
+    - Firebase
 
 # 4. Дизайн
 
