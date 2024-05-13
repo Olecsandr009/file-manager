@@ -42,6 +42,7 @@
 
 * Бекенд:
     - Express
+    - Express-jwt
     - БД PostgreSQL
     - TypeORM
 
@@ -52,7 +53,7 @@
     - RTK Query
     - axios
     - TypeScript
-    - Firebase
+    - Tailwind
 
 # 4. Дизайн
 
