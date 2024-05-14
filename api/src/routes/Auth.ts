@@ -1,25 +1,18 @@
 import { Router, Response, Request } from "express";
+import { signIn, signUp, signOut, refresh } from "../controller/Auth";
 
 const router = Router();
 
 // Login endpoint
-router.post("/sing-in", (req: Request, res: Response) => {
-    res.send("Login")
-})
+router.post("/sing-in", signIn)
 
 // Register endpoint
-router.post("/sing-up", (req: Request, res: Response) => {
-    res.send("Register")
-})
+router.post("/sing-up", signUp)
 
 // Logout endpoint
-router.post("/sing-out", (req: Request, res: Response) => {
-    res.send("Logout")
-})
+router.post("/sing-out", signOut)
 
 // Refresh endpoint
-router.post("/refresh", (req: Request, res: Response) => {
-    res.send("Refresh")
-})
+router.post("/refresh", refresh)
 
 export default router
