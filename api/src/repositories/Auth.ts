@@ -36,7 +36,7 @@ export async function setUser(data: {email: string, login: string, password: str
     return results
 }
 
-export const AuthService = {
+export const AuthRepository = {
     getUsers,
     getUserByEmail,
     getUserById,
