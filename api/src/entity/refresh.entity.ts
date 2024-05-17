@@ -1,3 +1,4 @@
+import { FingerprintResult } from "express-fingerprint";
 import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity({name: "RefreshEntity"})
@@ -9,5 +10,5 @@ export class RefreshEntity {
     refresh_token: string
 
     @Column()
-    finger_print: any
+    finger_print: string
 }
