@@ -1,4 +1,5 @@
 import { DataSource } from "typeorm"
+import { UserEntity } from "../entity/user.entity"
 
 export const pool = new DataSource({
     type: 'postgres',
@@ -7,7 +8,7 @@ export const pool = new DataSource({
     username: 'postgres',
     password: 'root',
     database: 'file-manager',
-    entities: [],
+    entities: [UserEntity],
     logging: true,
     synchronize: true
 })
