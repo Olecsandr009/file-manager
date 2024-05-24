@@ -14,13 +14,13 @@ interface IRequest extends Request {
 }
 
 export async function generateAccessToken(payload: IPayload) {
-    return await jwt.sign(payload, process.env.ACCESS_TOKEN, {
+    return await jwt.sign(payload, process.env.ACCESS_TOKEN_SECRET, {
         expiresIn: "30m"
     })
 }
 
 export async function generateRefreshToken(payload: IPayload) {
-    return await jwt.sign(payload, process.env.REFRESH_TOKEN, {
+    return await jwt.sign(payload, process.env.REFRESH_TOKEN_SECRET, {
         expiresIn: "7d"
     })
 }

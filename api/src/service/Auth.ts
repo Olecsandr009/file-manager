@@ -1,7 +1,7 @@
-import { AuthRepository } from "repositories/Auth";
+import { AuthRepository } from "../repositories/Auth";
 import bcrypt from "bcrypt"
 import { generateAccessToken, generateRefreshToken, TokenService } from "./Token";
-import { RefreshRepository } from "repositories/Refresh";
+import { RefreshRepository } from "../repositories/Refresh";
 import { ACCESS_TOKEN_EXPIRATION } from "../../constants"
 import { FingerprintResult } from "express-fingerprint";
 
@@ -53,7 +53,7 @@ export async function signUp(data: ISignUp) {
     const {email, login, password, finger_print} = data
     const userData = await AuthRepository.getUserByEmail(email)
 
-    if(!userData) {
+    if(userData) {
         throw new Error("User with that name already exists!")
     }
 

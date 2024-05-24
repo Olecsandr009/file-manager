@@ -1,4 +1,4 @@
-import { RefreshEntity } from "entity/refresh.entity"
+import { RefreshEntity } from "../entity/refresh.entity"
 import { pool } from "../config/db"
 import { FingerprintResult } from "express-fingerprint"
 

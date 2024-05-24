@@ -4,13 +4,13 @@ import { signIn, signUp, signOut, refresh } from "../controller/Auth";
 const router = Router();
 
 // Login endpoint
-router.post("/sing-in", signIn)
+router.post("/sign-in", signIn)
 
 // Register endpoint
-router.post("/sing-up", signUp)
+router.post("/sign-up", signUp)
 
 // Logout endpoint
-router.post("/sing-out", signOut)
+router.post("/sign-out", signOut)
 
 // Refresh endpoint
 router.post("/refresh", refresh)
