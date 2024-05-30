@@ -1,5 +1,6 @@
 import { FC } from "react";
 import Sidebar from "../../layout/sidebar/Sidebar";
+import Header from "../../layout/header/Header";
 import { Outlet } from "react-router-dom";
 import "./Layout.scss"
 
@@ -9,7 +10,10 @@ const Layout:FC<ILayout> = ({}) => {
     return (
         <div className="layout">
             <Sidebar />
-            <Outlet />
+            <div className="layout__content">
+                <Header />
+                <Outlet />
+            </div>
         </div>
     )
 }
