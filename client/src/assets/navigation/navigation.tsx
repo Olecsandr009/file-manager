@@ -22,8 +22,8 @@ export const navigation: INavigation[] = [
         category: "General",
         items: [
             {
-                name: "Beranda",
-                url: "/beranda",
+                name: "Home",
+                url: "/home",
                 element: <Home />,
                 icon: <IoSpeedometerOutline />
             },
@@ -34,8 +34,8 @@ export const navigation: INavigation[] = [
                 icon: <MdComputer />
             },
             {
-                name: "Dibagikan",
-                url: "/dibagikan",
+                name: "Shared",
+                url: "/shared",
                 element: <Home />,
                 icon: <GoPeople />
             }
@@ -51,20 +51,20 @@ export const navigation: INavigation[] = [
                 icon: <FaRegFolderOpen />
             },
             {
-                name: "Berbintang",
-                url: "/berbintang",
+                name: "Favorites",
+                url: "/аavorites",
                 element: <Home />,
                 icon: <FaRegStar />
             },
             {
-                name: "Terbaru",
-                url: "/terbaru",
+                name: "Latest",
+                url: "/latest",
                 element: <Home />,
                 icon: <GoClock />
             },
             {
-                name: "Sampah",
-                url: "/sampah",
+                name: "Rubbish",
+                url: "/rubbish",
                 element: <Home />,  
                 icon: <FaRegTrashAlt />
             }
