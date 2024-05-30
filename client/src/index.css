@@ -5,10 +5,15 @@
 
   --color-body: #FFFFFF;
   --color-primary: #3043ED;
+  --color-primary-hover: #4152EE;
+  --color-title: #ffffff;
+  --color-title-hover: #ffffffb4;
+  --color-text: #d0d0d0dc;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #242424;
+  background-color: var(--color-body);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
