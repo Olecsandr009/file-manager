@@ -1,0 +1,32 @@
+.nav {
+    &__category {
+        & .nav__title {
+            font-size: 12px;
+            font-weight: 400;
+            padding: 12px;
+            margin: 0;
+            color: var(--color-text);
+        }
+
+        & .nav__list {
+            & .nav__item {
+                transition: background-color .3s, color .3s;
+                border-radius: 8px;
+
+                &:hover {
+                    background-color: var(--color-primary-hover);
+                    color: var(--color-title)
+                }
+
+                & .nav__text {
+
+                }
+
+                & svg {
+                    fill: var(--color-title);
+                    stroke: var(--color-title);  
+                }
+            }
+        }
+    }
+}
