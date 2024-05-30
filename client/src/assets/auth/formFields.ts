@@ -18,7 +18,7 @@ export interface IFromField {
     placeholder: string
 }
 
-export const formFields: IFromField[] = [
+export const signUpFormFields: IFromField[] = [
     {
         name: "email",
         type: "email",
@@ -63,4 +63,23 @@ export const formFields: IFromField[] = [
         },
         placeholder: "Password",
     },
+]
+
+export const signInFormField: IFromField[] = [
+    {
+        name: "email",
+        type: "email",
+        options: {
+            required: 'Email is required'
+        },
+        placeholder: "Email"
+    },
+    {
+        name: "password",
+        type: "password",
+        options: {
+            required: "Password is required"
+        },
+        placeholder: "Password"
+    }
 ]

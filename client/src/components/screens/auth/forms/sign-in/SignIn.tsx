@@ -1,16 +1,15 @@
-import { Button, Link as MaterialLink, TextField, Typography } from "@mui/material"
+import { Button, TextField, Typography } from "@mui/material"
 import { Controller, SubmitHandler, useForm } from "react-hook-form"
-import { IFormInput, signUpFormFields } from "../../../../../assets/auth/formFields"
-import { Link as RoutLink } from "react-router-dom"
+import { IFormInput, signInFormField } from "../../../../../assets/auth/formFields"
 import { FC, MouseEvent } from "react"
 
-interface ISignUp {
+interface ISignIn {
     setAuthWindow: (event: MouseEvent<HTMLButtonElement>) => void
 }
 
-const SignUp:FC<ISignUp> = ({setAuthWindow}) => {
-    
-    const defaultValues = signUpFormFields.reduce((values, field) => {
+const SignIn: FC<ISignIn> = ({setAuthWindow}) => {
+
+    const defaultValues = signInFormField.reduce((values, field) => {
         values[field.name as keyof IFormInput] = "";
         return values;
     }, {} as IFormInput);
@@ -22,12 +21,12 @@ const SignUp:FC<ISignUp> = ({setAuthWindow}) => {
     return (
         <div className="auth__window">
             <Typography className="auth__title" variant="h3" component="h2">
-                Register
+                Login
             </Typography>
 
             <form className="auth__form" onSubmit={handleSubmit(onSubmit)}>
                 {
-                    signUpFormFields.map((fieldData, index) => {
+                    signInFormField.map((fieldData, index) => {
                         return (
                             <Controller 
                                 key={index}
@@ -56,12 +55,12 @@ const SignUp:FC<ISignUp> = ({setAuthWindow}) => {
                         )
                     })
                 }
-
-                <Button className="auth__button" onClick={setAuthWindow} variant="text">Login</Button>
-                <Button className="auth__submit" type="submit" variant="contained">Register</Button>
+                
+                <Button className="auth__button" onClick={setAuthWindow} variant="text">Register</Button>
+                <Button className="auth__submit" type="submit" variant="contained">Login</Button>
             </form>
         </div>
     )
 }
 
-export default SignUp
+export default SignIn
