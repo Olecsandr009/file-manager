@@ -1,0 +1,17 @@
+.search {
+    // border: none;
+    
+    & .MuiOutlinedInput-root {
+        background-color: var(--color-primary-hover);
+        padding-left: 8px   ;
+
+        & input {
+            padding: 8px;
+            padding-left: 0;
+        }
+
+        & fieldset {
+            border: none;
+        }
+    }
+}
